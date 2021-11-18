@@ -36,15 +36,15 @@ const rarityList = [
   "super legend",
 ];
 
-export function updateSimulator(skillsValues: any) {
+export function updateSimulator(skillsValues: any, addOnsValues: any) {
   // get vars together
   var power = skillsValues[0].value;
   var speed = skillsValues[1].value;
   var stamina = skillsValues[2].value;
   var bombnum = skillsValues[3].value;
   var bombrange = skillsValues[4].value;
-  var energy = 0;
-  var mana = 0;
+  var energy = addOnsValues[0].value;
+  var mana = addOnsValues[1].value;
 
   // Lets calculate the time this hero needs to fully recover
   var timeToRecover;
@@ -80,9 +80,11 @@ export function updateSimulator(skillsValues: any) {
   minProfit = parseFloat(minProfit.toFixed(3));
   var avgProfit = (avgProfit = (maxProfit + minProfit) / 2);
 
-  console.log("Total Talents: " + totalTalents);
-  console.log("Total Profit: " + totalProfit);
-  console.log("Max Profit: " + maxProfit);
-  console.log("Min Profit: " + minProfit);
-  console.log("Avg Profit: " + avgProfit);
+  return {
+    totalTalents: totalTalents,
+    totalProfit: totalProfit,
+    maxProfit: maxProfit,
+    minProfit: minProfit,
+    avgProfit: avgProfit,
+  };
 }

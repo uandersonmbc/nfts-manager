@@ -3,8 +3,12 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
 import Hero from "components/Hero/Hero";
+import HeroList from "components/HeroList/HeroList";
+import { useState } from "react";
 
 const Home: NextPage = () => {
+  const [heroList, setHeroList] = useState([]);
+  const [heroSelected, setHeroSelected] = useState(null);
   return (
     <div className={styles.container}>
       <Head>
@@ -14,7 +18,8 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <Hero />
+        <Hero onChange={} heroSelected={heroSelected} />
+        <HeroList list={heroList} />
       </main>
     </div>
   );

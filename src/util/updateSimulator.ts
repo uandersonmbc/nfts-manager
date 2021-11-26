@@ -78,7 +78,7 @@ export function updateSimulator(skillsValues: any, addOnsValues: any) {
   maxProfit = parseFloat(maxProfit.toFixed(3));
   var minProfit = totalProfit - totalProfit * 0.4;
   minProfit = parseFloat(minProfit.toFixed(3));
-  var avgProfit = (avgProfit = (maxProfit + minProfit) / 2);
+  var avgProfit: number = (avgProfit = (maxProfit + minProfit) / 2);
 
   return {
     totalTalents: totalTalents,

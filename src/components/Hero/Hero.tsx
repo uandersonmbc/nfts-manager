@@ -8,12 +8,12 @@ import { skins, addOns, skills, rarities } from "util/heros";
 
 import styles from "./styles.module.scss";
 
-export interface Hero {
+interface Hero {
   onChange: () => void;
   heroSelected: any;
 }
 
-export default function Hero() {
+export default function Hero(props: Hero) {
   const [skillsValues, setSkillsValues] = useState(skills);
   const [addOnsValues, setAddOnsValues] = useState(addOns);
   const [skin, setSkin] = useState(skins[0]);

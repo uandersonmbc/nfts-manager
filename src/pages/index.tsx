@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <Hero onChange={} heroSelected={heroSelected} />
+        <Hero onChange={() => {}} heroSelected={heroSelected} />
         <HeroList list={heroList} />
       </main>
     </div>

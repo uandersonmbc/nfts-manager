@@ -1,21 +1,21 @@
-import doge from "assets/images/1-doge.gif";
-import frog from "assets/images/1-frog.gif";
-import knight from "assets/images/1-knight.gif";
-import log from "assets/images/1-log.gif";
-import man from "assets/images/1-man.gif";
-import mushroom from "assets/images/1-mushroom.gif";
-import pepe from "assets/images/1-pepe.gif";
-import pumpkin from "assets/images/1-pumpkin.gif";
-import rock from "assets/images/1-rock.gif";
-import vampire from "assets/images/1-vampire.gif";
-import witch from "assets/images/1-witch.gif";
-import dino from "assets/images/2-dino.gif";
-import king from "assets/images/2-king.gif";
-import robot from "assets/images/2-robot.gif";
-import solider from "assets/images/3-solider.gif";
+import doge from "assets/images/bombcrypto/1-doge.gif";
+import frog from "assets/images/bombcrypto/1-frog.gif";
+import knight from "assets/images/bombcrypto/1-knight.gif";
+import log from "assets/images/bombcrypto/1-log.gif";
+import man from "assets/images/bombcrypto/1-man.gif";
+import mushroom from "assets/images/bombcrypto/1-mushroom.gif";
+import pepe from "assets/images/bombcrypto/1-pepe.gif";
+import pumpkin from "assets/images/bombcrypto/1-pumpkin.gif";
+import rock from "assets/images/bombcrypto/1-rock.gif";
+import vampire from "assets/images/bombcrypto/1-vampire.gif";
+import witch from "assets/images/bombcrypto/1-witch.gif";
+import dino from "assets/images/bombcrypto/2-dino.gif";
+import king from "assets/images/bombcrypto/2-king.gif";
+import robot from "assets/images/bombcrypto/2-robot.gif";
+import solider from "assets/images/bombcrypto/3-solider.gif";
 
-import mana from "assets/images/mana.png";
-import energy from "assets/images/energy.png";
+import mana from "assets/images/bombcrypto/mana.png";
+import energy from "assets/images/bombcrypto/energy.png";
 
 export const addOnsImg = {
   mana: mana,

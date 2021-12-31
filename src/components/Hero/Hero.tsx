@@ -2,7 +2,7 @@ import Image from "next/image";
 import ButtonIncrementDecrement from "components/ButtonIncrementDecrement/ButtonIncrementDecrement";
 import { useEffect, useState } from "react";
 
-import { updateSimulator } from "../../util/updateSimulator";
+import { simulatorBombCrypto } from "util/Simulator";
 
 import { skins, addOns, skills, rarities } from "util/heros";
 
@@ -45,10 +45,7 @@ export default function Hero(props: Hero) {
     }
   };
 
-  useEffect(() => {
-    const asdf = updateSimulator(skillsValues, addOnsValues);
-    console.log(asdf);
-  }, [skillsValues, addOnsValues]);
+  useEffect(() => {}, [skillsValues, addOnsValues]);
 
   return (
     <div className={styles.hero}>
